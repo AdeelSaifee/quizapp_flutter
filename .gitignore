@@ -1,48 +1,91 @@
-# Miscellaneous
+# Miscellaneous / OS files
 *.class
 *.log
 *.pyc
 *.swp
+*.bak
+*.tmp
 .DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
 
-# IntelliJ related
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# IntelliJ / Android Studio / IDEs
 *.iml
 *.ipr
 *.iws
 .idea/
+.vscode/
+.cursor/
+.fleet/
+.atom/
+.history
+.svn/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# Flutter / Dart / Pub related
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
 .pub/
 /build/
 /coverage/
+**/doc/api/
+.widget_preview/
 
-# Symbolication related
+# Symbolication & Obfuscation
 app.*.symbols
-
-# Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Android specific
+android/.gradle/
+android/local.properties
+android/key.properties
+android/captures/
+android/.cxx/
+android/app/debug/
+android/app/profile/
+android/app/release/
+**/*.keystore
+**/*.jks
+*.hprof
+GeneratedPluginRegistrant.java
 
-# Widget Preview related
-.widget_preview/
+# iOS specific
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/ephemeral/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/app.flx
+ios/Flutter/app.zip
+ios/Flutter/flutter_assets/
+ios/Runner/GeneratedPluginRegistrant.*
+**/DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+profile
+xcuserdata/
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+
